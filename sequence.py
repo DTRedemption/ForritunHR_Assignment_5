@@ -9,3 +9,19 @@ n = int(input("Enter the length of the sequence: "))  # Do not change this line
 # assign a,b,c to trib, a and b respectively
 # increment by 1
 # print each number successively
+
+x = 0
+
+a = 0
+b = 1
+c = 0
+
+while x < n:
+
+    trib = a + b + c
+
+    a, b, c = trib, a, b
+
+    x += 1
+
+    print(trib)
